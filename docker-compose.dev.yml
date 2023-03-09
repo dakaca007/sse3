@@ -1,0 +1,11 @@
+services:
+
+  openai_service:
+    build: .
+    # image: node:18-alpine
+    restart: always
+    ports:
+      - 40003:40003
+    volumes:
+      - ./src:/app/scr
+    # command: nodemon ./scr/server.js
