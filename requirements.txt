@@ -1,2 +1,5 @@
 Flask
 jsonify
+openai
+flask_cors
+Flask-Limiter
