@@ -12,7 +12,10 @@ $ docker build -t flask_web_app .
 $ docker run --name flask_web_app -p 40003:40003 flask_web_app
 
 
-curl -X POST http://localhost:40003/openai \
+curl -X POST http://localhost:40003/prompt \
 -H "Content-Type: application/json" \
 -d '{"prompt": "Say hello in Japanese", "max_tokens": 100}' \
 -v
+
+
+{"origins": app.config['CORS_ORIGINS']}}
